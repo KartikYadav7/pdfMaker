@@ -43,12 +43,15 @@ A simple React app to create, preview, and download PDFs. Built using `@react-pd
 1. Clone the repo:
     ```bash
    git clone https://github.com/KartikYadav7/pdfMaker.git
+   cd pdfMaker
 
 
-2.Install dependencies:  
+2.Install dependencies: 
+
     npm install
 
 3.Run the App:  
+
     npm run dev
 
 ---
