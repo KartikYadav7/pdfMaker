@@ -6,7 +6,6 @@ A simple React app to create, preview, and download PDFs. Built using `@react-pd
 
 ## 🚀 Features
 
-- 📝 Add/remove text cards (with `topic` and `content`)
 - 📄 Generate PDF with all card entries
 - 📥 Download generated PDF file
 - 🔍 Preview PDF live on desktop  
@@ -27,6 +26,17 @@ A simple React app to create, preview, and download PDFs. Built using `@react-pd
 
 ---
 
+## Screenshot  
+![Screenshot (418)](https://github.com/user-attachments/assets/6aca329c-54c0-49fb-a733-749a1bf68ab0)  
+
+---
+
+![Screenshot (419)](https://github.com/user-attachments/assets/f14fa4c6-f05c-42bb-9262-62f3fa2bb52f)
+
+
+---
+
+
 ## 🖥️ Desktop vs Mobile UX
 
 | Feature        | Desktop        | Mobile             |
@@ -38,6 +48,7 @@ A simple React app to create, preview, and download PDFs. Built using `@react-pd
 ---
 
 ## 📦 Installation
+
 
 1. Clone the repo:
     ```bash
