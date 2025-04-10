@@ -9,7 +9,6 @@ const extractDirectImageUrl = (url) => {
     return url;
   }
 };
-
 const parseHtmlToPdfElements = (htmlString = '') => {
   const elements = [];
   const imageUrlRegex = /(https?:\/\/[^\s"'<>]+?\.(?:png|jpe?g|gif|svg))|(data:image\/(?:png|jpe?g|gif|svg\+xml);base64,[\w+/=]+(?:=)?)/gi;
@@ -26,7 +25,8 @@ const parseHtmlToPdfElements = (htmlString = '') => {
       const textChunk = htmlString.slice(lastIndex, matchStart);
       if (textChunk.trim()) {
         elements.push(
-          <Text key={`text-${matchIndex}`}>
+          <Text key={`text-${matchIndex}`}
+          style={{ fontSize: 12, marginBottom: 4 }}>
             {textChunk}
           </Text>
         );
@@ -41,7 +41,7 @@ const parseHtmlToPdfElements = (htmlString = '') => {
         <Image
           key={`img-${matchIndex}`}
           src={src}
-          style={{ width: 300, marginTop: 15, marginBottom: 15, alignSelf: 'center' }}
+          style={{ width: 400, marginTop: 15, marginBottom: 15, alignSelf: 'center' , }}
         />
       );
     }
@@ -55,7 +55,8 @@ const parseHtmlToPdfElements = (htmlString = '') => {
     const remainingText = htmlString.slice(lastIndex);
     if (remainingText.trim()) {
       elements.push(
-        <Text key={`text-end`}>
+        <Text key={`text-end`}
+        style={{ fontSize: 12, marginBottom: 4 }}>
           {remainingText}
         </Text>
       );
