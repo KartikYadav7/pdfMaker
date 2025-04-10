@@ -22,7 +22,7 @@ A simple React app to create, preview, and download PDFs. Built using `@react-pd
 - **@react-pdf/renderer** for PDF generation
 - **react-toastify** for toast messages
 - **react-icons** for icons
-- **Custom Error Boundary & Backspace Handler**
+
 
 ---
 
